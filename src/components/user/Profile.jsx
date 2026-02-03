@@ -17,7 +17,7 @@ const Profile = () => {
     if (!userId) return;
 
     axios
-      .get(`http://localhost:3000/userProfile/${userId}`)
+      .get(`52.72.248.51:3000/userProfile/${userId}`)
       .then((res) => setUserDetails(res.data))
       .catch(() => {});
   }, []);
